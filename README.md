@@ -2,9 +2,15 @@
 
 Official compiled plugin downloads for Paper and Folia. Download the latest TNE-Economy jar from [Releases](https://github.com/SlyRiddles/TNE-Economy-Releases/releases/latest).
 
-TNE-Economy 1.0.6 and newer download verified updates directly from this repository and install them on a normal server restart. The source code remains in a separate private repository. No GitHub token is required by server owners.
+TNE-Economy 1.0.11 and newer download verified updates directly from this repository and install them on a normal server restart. The source code remains in a separate private repository. No GitHub token is required by server owners.
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
+
+## Install the updater fix once
+
+Versions before 1.0.11 can announce an update but reject downloading it because Paper/Folia reports API `26.1.0` while the manifest uses `26.1`. Version 1.0.11 fixes that comparison.
+
+If you are stuck on an older version, stop Minecraft, replace the existing TNE plugin JAR with the latest release, and start Minecraft. Keep your plugin data/config folder and only one installed TNE JAR. Future compatible updates download automatically and install on restart. With the default Bukkit setting, pending updates go in `plugins/update`; `plugins/TheNewerEconomy/updates` holds state and backups.
 
 ## Live update notifications
 
