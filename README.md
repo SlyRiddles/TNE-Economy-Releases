@@ -6,19 +6,19 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
-## Detailed server-owner controls (1.0.22)
+## Detailed server-owner controls (1.0.23)
 
 Restores local issuance, treasury and reward funding, Vault settlement and conversion reserves, account labels, currency rules/conversion settings, receipts, payment cancellation, money-note refunds, command/owner audit and console-approved currency resets. Pre-funded supply blocks new issuance while allowing funded payouts. Existing balances and pairing remain intact; no currency is issued automatically.
 
-Use TNECORE 1.0.22 and deploy the updated website. Restart TNECORE first, then restart Minecraft after UPDATE READY. Open your server console and choose **Funding and system accounts** to review the accounts and funding workflow.
+Use TNECORE 1.0.23 and deploy the updated website. Restart TNECORE first, then restart Minecraft after UPDATE READY. Open your server console and choose **Funding and system accounts** to review the accounts and funding workflow.
 
 ## Player wallet dashboard (1.0.18)
 
-Adds server icons, currency catalogs and durable transaction history for player wallets. With TNECORE 1.0.22 and the updated website, players get server wallet cards, a global currency collection, recent and complete transaction history, scoped stats and saved organization. Existing balances and pairing remain intact. History catches up after updating; older unrecorded post-transaction balances remain unknown. Restart TNECORE and deploy the website, then restart Minecraft after UPDATE READY.
+Adds server icons, currency catalogs and durable transaction history for player wallets. With TNECORE 1.0.23 and the updated website, players get server wallet cards, a global currency collection, recent and complete transaction history, scoped stats and saved organization. Existing balances and pairing remain intact. History catches up after updating; older unrecorded post-transaction balances remain unknown. Restart TNECORE and deploy the website, then restart Minecraft after UPDATE READY.
 
 ## Wallet registration compatibility (1.0.17)
 
-Fixes the plugin rejecting numeric registration-link expiry values and adds useful wallet failure details in the Minecraft console. Credentials and registration links are excluded from diagnostics. TNECORE 1.0.22 also fixes responses for older installed plugins. Restart TNECORE, install the plugin update after UPDATE READY, then retry /tne register wallet. No website change is needed.
+Fixes the plugin rejecting numeric registration-link expiry values and adds useful wallet failure details in the Minecraft console. Credentials and registration links are excluded from diagnostics. TNECORE 1.0.23 also fixes responses for older installed plugins. Restart TNECORE, install the plugin update after UPDATE READY, then retry /tne register wallet. No website change is needed.
 
 ## Faster website console (1.0.16)
 
