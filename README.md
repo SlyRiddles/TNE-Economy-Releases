@@ -6,6 +6,14 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Server status and owner controls (1.0.14)
+
+TNE-Economy 1.0.14 reports Minecraft version and local event counts about every 30 seconds. With TNECORE 1.0.16 and the latest website, the developer server directory uses the installation connection for online status, SQL health, and plugin version.
+
+Server owners can review and submit local balance adjustments, transaction reversals, item/XP deliveries, and failed-delivery recovery from their own server console. Requests are scoped to the owned installation and saved with a stable ID; reconnecting or resending cannot apply them twice. Player targets must be registered locally. Local grants do not issue central TNE backing.
+
+Restart TNECORE to update it, deploy the latest website, then restart Minecraft once the verified plugin update is ready.
+
 ## Versioned installed filenames
 
 Starting with 1.0.13, automatic updates install as `TNE-Economy-<version>.jar`. Paper/Folia applies the verified update and renames the old JAR during startup. Older pending TNE downloads are removed while unrelated plugins' updates are preserved.
