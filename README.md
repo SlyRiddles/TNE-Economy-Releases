@@ -6,6 +6,10 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Matching developer and owner action screens (1.0.15)
+
+With TNECORE 1.0.17 and the latest website, server owners use the same Balance and item actions screen as developers, including player search, Minecraft item icons/categories, multiple selected stacks, previews, delivery status, and confirmation. Owner data comes from the selected installation. Up to 20 item stacks, including potion variants, are queued together in one transaction; retries cannot duplicate them.
+
 ## Server status and owner controls (1.0.14)
 
 TNE-Economy 1.0.14 reports Minecraft version and local event counts about every 30 seconds. With TNECORE 1.0.16 and the latest website, the developer server directory uses the installation connection for online status, SQL health, and plugin version.
