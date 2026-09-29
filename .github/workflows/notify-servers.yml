@@ -1,0 +1,32 @@
+name: Notify Minecraft servers
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: plugin-release-notification
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: github.event_name == 'workflow_dispatch' || (!github.event.release.prerelease && !github.event.release.draft)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake connected servers after the release is published
+        env:
+          NOTIFY_URL: ${{ vars.TNE_PLUGIN_NOTIFY_URL || 'https://tneapi.riddleslabs.com/api/plugin-updates/notify' }}
+        run: |
+          # Empty wake-up signal only. Each plugin verifies the fixed GitHub release feed itself.
+          status="$(curl --silent --show-error --output /dev/null --write-out '%{http_code}' \
+            --proto '=https' --connect-timeout 5 --max-time 15 --retry 2 --retry-delay 2 \
+            --request POST "$NOTIFY_URL")"
+          if [ "$status" != "202" ]; then
+            echo "::error::TNECORE rejected the release signal (HTTP $status). Deploy TNECORE 1.0.11+; periodic plugin checks remain available."
+            exit 1
+          fi
+          echo "TNECORE accepted the release signal for connected Minecraft servers."
