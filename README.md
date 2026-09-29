@@ -6,6 +6,10 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Wallet registration compatibility (1.0.17)
+
+Fixes the plugin rejecting numeric registration-link expiry values and adds useful wallet failure details in the Minecraft console. Credentials and registration links are excluded from diagnostics. TNECORE 1.0.19 also fixes responses for older installed plugins. Restart TNECORE, install the plugin update after UPDATE READY, then retry /tne register wallet. No website change is needed.
+
 ## Faster website console (1.0.16)
 
 Use TNECORE 1.0.18 and the latest website. The plugin now answers website reads through a live connection instead of waiting for the setup polling cycle. Concurrent player and item queries run together. Visited website views remain visible during background refreshes. Restart Minecraft after UPDATE READY to install this release.
