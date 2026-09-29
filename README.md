@@ -6,6 +6,10 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Faster website console (1.0.16)
+
+Use TNECORE 1.0.18 and the latest website. The plugin now answers website reads through a live connection instead of waiting for the setup polling cycle. Concurrent player and item queries run together. Visited website views remain visible during background refreshes. Restart Minecraft after UPDATE READY to install this release.
+
 ## Matching developer and owner action screens (1.0.15)
 
 With TNECORE 1.0.17 and the latest website, server owners use the same Balance and item actions screen as developers, including player search, Minecraft item icons/categories, multiple selected stacks, previews, delivery status, and confirmation. Owner data comes from the selected installation. Up to 20 item stacks, including potion variants, are queued together in one transaction; retries cannot duplicate them.
