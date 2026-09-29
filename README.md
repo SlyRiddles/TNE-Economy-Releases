@@ -6,6 +6,12 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Detailed server-owner controls (1.0.19)
+
+Restores local issuance, treasury and reward funding, Vault settlement and conversion reserves, account labels, currency rules/conversion settings, receipts, payment cancellation, money-note refunds, command/owner audit and console-approved currency resets. Pre-funded supply blocks new issuance while allowing funded payouts. Existing balances and pairing remain intact; no currency is issued automatically.
+
+Use TNECORE 1.0.21 and deploy the updated website. Restart TNECORE first, then restart Minecraft after UPDATE READY. Open your server console and choose **Funding and system accounts** to review the accounts and funding workflow.
+
 ## Player wallet dashboard (1.0.18)
 
 Adds server icons, currency catalogs and durable transaction history for player wallets. With TNECORE 1.0.20 and the updated website, players get server wallet cards, a global currency collection, recent and complete transaction history, scoped stats and saved organization. Existing balances and pairing remain intact. History catches up after updating; older unrecorded post-transaction balances remain unknown. Restart TNECORE and deploy the website, then restart Minecraft after UPDATE READY.
