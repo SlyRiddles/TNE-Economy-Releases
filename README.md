@@ -6,6 +6,10 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Player wallet dashboard (1.0.18)
+
+Adds server icons, currency catalogs and durable transaction history for player wallets. With TNECORE 1.0.20 and the updated website, players get server wallet cards, a global currency collection, recent and complete transaction history, scoped stats and saved organization. Existing balances and pairing remain intact. History catches up after updating; older unrecorded post-transaction balances remain unknown. Restart TNECORE and deploy the website, then restart Minecraft after UPDATE READY.
+
 ## Wallet registration compatibility (1.0.17)
 
 Fixes the plugin rejecting numeric registration-link expiry values and adds useful wallet failure details in the Minecraft console. Credentials and registration links are excluded from diagnostics. TNECORE 1.0.19 also fixes responses for older installed plugins. Restart TNECORE, install the plugin update after UPDATE READY, then retry /tne register wallet. No website change is needed.
