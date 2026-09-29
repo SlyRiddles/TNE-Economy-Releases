@@ -6,7 +6,7 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
-## Detailed server-owner controls (1.0.19)
+## Detailed server-owner controls (1.0.20)
 
 Restores local issuance, treasury and reward funding, Vault settlement and conversion reserves, account labels, currency rules/conversion settings, receipts, payment cancellation, money-note refunds, command/owner audit and console-approved currency resets. Pre-funded supply blocks new issuance while allowing funded payouts. Existing balances and pairing remain intact; no currency is issued automatically.
 
@@ -18,7 +18,7 @@ Adds server icons, currency catalogs and durable transaction history for player 
 
 ## Wallet registration compatibility (1.0.17)
 
-Fixes the plugin rejecting numeric registration-link expiry values and adds useful wallet failure details in the Minecraft console. Credentials and registration links are excluded from diagnostics. TNECORE 1.0.19 also fixes responses for older installed plugins. Restart TNECORE, install the plugin update after UPDATE READY, then retry /tne register wallet. No website change is needed.
+Fixes the plugin rejecting numeric registration-link expiry values and adds useful wallet failure details in the Minecraft console. Credentials and registration links are excluded from diagnostics. TNECORE 1.0.20 also fixes responses for older installed plugins. Restart TNECORE, install the plugin update after UPDATE READY, then retry /tne register wallet. No website change is needed.
 
 ## Faster website console (1.0.16)
 
