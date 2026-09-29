@@ -6,6 +6,12 @@ TNE-Economy 1.0.11 and newer download verified updates directly from this reposi
 
 Each release includes the jar, a SHA-256 checksum and tne-economy-latest.json used by the updater.
 
+## Versioned installed filenames
+
+Starting with 1.0.13, automatic updates install as `TNE-Economy-<version>.jar`. Paper/Folia applies the verified update and renames the old JAR during startup. Older pending TNE downloads are removed while unrelated plugins' updates are preserved.
+
+When upgrading from 1.0.12 or earlier, the old updater initially keeps the old filename. After 1.0.13 starts, wait for **FILENAME UPDATE READY**, then restart once more to correct it. Future updates change the version and filename together in one restart. No TNECORE or website update is needed.
+
 ## Install the updater fix once
 
 Versions before 1.0.11 can announce an update but reject downloading it because Paper/Folia reports API `26.1.0` while the manifest uses `26.1`. Version 1.0.11 fixes that comparison.
